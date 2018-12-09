@@ -215,3 +215,39 @@ Available Java Versions
   > sdk install java 10.0.2-oracle
 
 https://wpanas.github.io/tools/2017/12/25/sdkman.html
+
+## Steps to setup a Java/Gradle/Spring Boot project in Cloud9
+
+1. Create a new workspace with the blank template in cloud9.
+
+2. Inside the workspace create a new folder named ‘projects’. ‘cd’ into the ‘projects’ directory.
+
+3. Check the values set for git user.name and user.email using the ‘git config --list’ command.  (git is pre-installed in the Blank template of cloud9)
+
+4. Set appropriate values using git config --global user.name <value-in-double-quotes> and git config --global user.email <value-in-double-quotes>
+
+5. Checkout the project available in GitHub using the ‘git clone’ command.(e.g. git clone https://github.com/vsquared101/tms.git)
+
+6. Install sdkman which we will need to install java and gradle in cloud9.
+
+    a. Run the command > curl -s "https://get.sdkman.io" | bash
+
+    b. Run the initialize scripts for sdkman > source "/home/ubuntu/.sdkman/bin/sdkman-init.sh"
+
+    c. Run the command > sdk list gradle (to view available gradle versions)
+
+    d. Run > sdk install gradle 4.10.2 (to install the provided version here)
+
+    e. Run the command > sdk list java (to view available java versions)
+
+    f. Run > sdk install java 8.0.181-oracle (to install the version provided here)
+
+    g. Run > gradle –version (to verify the version of gradle that was installed)
+
+    h. Run > java –version(to verify the version of java that was installed)
+
+7. Run > gradle tasks (to view all the tasks available. If Spring Boot plugin is added to build.gradle file then a task named ‘bootJar’ will be available in the list of tasks)
+
+8. Run > gradle bootJar (to assemble an executable jar archive containing the main classes and their dependencies inside the ‘build/libs/’ directory)
+
+9. Run the Spring Boot application using ‘java –jar build/libs/<jar-file>’.(by default the application runs at port 8080)
