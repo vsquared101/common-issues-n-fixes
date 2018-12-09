@@ -164,15 +164,15 @@ Open the newly created user.service.ts file and add the below content:
 
 1. Install SDKMAN:
 
-> curl -s "https://get.sdkman.io" | bash
+  > curl -s "https://get.sdkman.io" | bash
 
 2. Run initialize scripts:
 
-> source "/home/ubuntu/.sdkman/bin/sdkman-init.sh"
+  > source "/home/ubuntu/.sdkman/bin/sdkman-init.sh"
 
 3. Get list of Gradle versions available with SDKMAN:
 
-> sdk list gradle
+  > sdk list gradle
 
 In the output of the above command, the version preceeded with:
 
@@ -182,15 +182,15 @@ In the output of the above command, the version preceeded with:
 
 4. Run below command to install gradle 10.2.0
 
-> sdk install gradle 10.2.0
+  > sdk install gradle 10.2.0
 
 5. Now run the "sdk list gradle" command. The output will have below version:
 
-> * 4.10.2 (which denotes that this is the version of gradle that is installed and currently in use)
+  > * 4.10.2 (which denotes that this is the version of gradle that is installed and currently in use)
 
 6. Follow similar steps for Java:
 
-> sdk list java
+  > sdk list java
 
 -- Will display list of available jdk versions with SDKMAN.
 
@@ -212,6 +212,6 @@ Available Java Versions
 	 
 7. Now we can install a version from the above list using:
 
-> sdk install java 10.0.2-oracle
+  > sdk install java 10.0.2-oracle
 
 https://wpanas.github.io/tools/2017/12/25/sdkman.html
