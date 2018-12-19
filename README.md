@@ -251,3 +251,26 @@ https://wpanas.github.io/tools/2017/12/25/sdkman.html
 8. Run > gradle bootJar (to assemble an executable jar archive containing the main classes and their dependencies inside the ‘build/libs/’ directory)
 
 9. Run the Spring Boot application using ‘java –jar build/libs/<jar-file>’.(by default the application runs at port 8080)
+
+## Steps to push an Angular project to GitHub Pages(TechStack: Node: 11.4.0, NPM: 6.5.0, Angular CLI: 7+, Bootstrap: 4.1+)
+
+1. Create a project using 'ng new' command and make ALL the necessary code changes.
+(no need to add and commit to local git and we will be pushing/deploying only the files generated as part of 'ng build' command and not the source files)
+
+2. Create an empty repository in GitHub.(NO README.md file needed)
+
+3. In the Angular project root in local machine add the remote repository created in Step 2. (using 'git remote add origin <url>')
+
+4. Run the below command to build the Angular code changes and specify base URL:
+
+  > ng build --prod --base-href "https://vsquared101.github.io/<repo-name>/"
+
+5. Command to push the code to GitHub pages:
+
+  > ngh --dir=dist/<project-name>
+
+  (above command is valid for Angular 6+ as we get a <project-name> folder inside the 'dist' folder in these versions.)
+
+6. Navigate to the URL given as base-href in Step (4) to view your application.
+
+7. To push any new changes make the changes and then repeat Steps (4) and (5).
