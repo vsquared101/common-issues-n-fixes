@@ -194,9 +194,9 @@ In the output of the above command, the version preceeded with:
 
 -- Will display list of available jdk versions with SDKMAN.
 
-================================================================================
-Available Java Versions
-================================================================================
+
+### Available Java Versions
+
      12.ea.12-open                                                              
      11.ea.28-open                                                              
      10.0.2-zulu                                                                
