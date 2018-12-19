@@ -263,13 +263,13 @@ https://wpanas.github.io/tools/2017/12/25/sdkman.html
 
 4. Run the below command to build the Angular code changes and specify base URL:
 
-  > ng build --prod --base-href "https://vsquared101.github.io/<repo-name>/"
+  > ng build --prod --base-href "https://vsquared101.github.io/\<repo-name>/"
 
 5. Command to push the code to GitHub pages:
 
-  > ngh --dir=dist/<project-name>
+  > ngh --dir=dist/\<project-name>
 
-  (above command is valid for Angular 6+ as we get a <project-name> folder inside the 'dist' folder in these versions.)
+  (above command is valid for Angular 6+ as we get a \<project-name> folder inside the 'dist' folder in these versions.)
 
 6. Navigate to the URL given as base-href in Step (4) to view your application.
 
