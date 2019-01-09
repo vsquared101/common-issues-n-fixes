@@ -274,3 +274,44 @@ https://wpanas.github.io/tools/2017/12/25/sdkman.html
 6. Navigate to the URL given as base-href in Step (4) to view your application.
 
 7. To push any new changes make the changes and then repeat Steps (4) and (5).
+
+
+## Eclipse short-cuts
+
+- Use Ctrl + m/M to switch the editor window size
+
+- Use upper case first letters of class for eg AL for ArrayList with Ctrl + Shift + R/T to open that class
+
+- Alt + up arrow down arrow to move a piece of code up or down
+
+- Use Ctrl + T to see the type hierarchy of the selected class
+
+- Use Ctrl + Shift + L to see a list of all eclipse shortcuts
+
+- Use Ctrl + Q to go to the last edit performed even if the edit was done in another class
+
+- Use F3 to open a selected class name
+
+- Use F4 to open type hierarchy 
+
+- Toggle breadcrumbs  to see the complete path of the file that is open at the top of the edit screen
+
+- Toggle Mark occurrences to mark all occurrences of a selected variable
+
+- Use Alt + Shift + M to extract a method using selected lines of code
+
+- Use Alt + Shift + I to inline the method/ put it back inside the other method
+
+- Use Alt + Shift + T to open the refactor menu
+
+- Use Alt + Shift + C to add parameter to a method/change signature of the method
+
+- Use Alt + Shift + V to move a method from one class / type to another
+
+- Use Alt + Shift + S to generate code
+
+- To enable formatting of code on save and not selecting code and manually formatting it use Save actions which can remove unnecessary code, auto format code, etc on save 
+
+- We can create working sets to group projects
+
+
