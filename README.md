@@ -314,4 +314,30 @@ https://wpanas.github.io/tools/2017/12/25/sdkman.html
 
 - We can create working sets to group projects
 
+## Steps to work with imported Maven project with proxy settings/automatic configuration script
 
+- In Eclipse go to Window -> Preferences -> Network Connections and set the Active Provider to "Native" and check only the HTTP,Dynamic,Dynamic,Native,No checkbox.
+- Go to Internet Explorer -> Connections -> LAN Settings and get the details or path of the automatic configuration script or the proxy host and port no. if directly provided.
+- Open the file corresponding to the automatic configuration script(can be a file with .pac or .dat extension) and make a note of the HTTP host and port values.
+- In settings.xml file inside ".m2" folder add the below script inside the `proxies` tag.(remove id, username, password tags if not needed or values are not available)
+
+```xml
+
+<proxy>
+      <active>true</active>
+      <protocol>http</protocol>
+      <host>someurl.companyname.com</host>
+      <port>portno</port>
+</proxy>
+
+```
+- Go to the imported maven project on the command line and run "mvn clean install" to download and install all project dependencies.
+- If the java files within the project do not have Java nature add it to the .project file using below statement:
+
+```xml
+
+  <nature>org.eclipse.jdt.core.javanature</nature>
+
+```
+
+- Right-click the project in Eclipse and click on Maven -> Update Project to reflect the Java nature change.
