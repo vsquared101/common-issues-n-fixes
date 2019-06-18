@@ -286,15 +286,15 @@ https://wpanas.github.io/tools/2017/12/25/sdkman.html
 1. Create a project using 'ng new' command on the local machine and make ALL the necessary code changes.
 (no need to add and commit to local git and we will be pushing/deploying only the files generated as part of 'ng build' command and not the source files)
 
-2. Create an empty repository in GitHub with the name ‘<github-user-name>.github.io’(NO README.md file needed)
+2. Create an empty repository in GitHub with the name `<github-user-name>.github.io`(NO README.md file needed)
   
-3. In the Angular project on local machine go to angular.json file and update "outputPath" under "build" to only "dist"(remove the project name after dist). Then run "ng build --prod" to build the code into the dist folder. 
+3. In the Angular project on local machine go to angular.json file and update "outputPath" under "build" to only "dist"(remove the project name after dist). Then run `ng build --prod` to build the code into the dist folder. 
 
-4. In the Angular project root in local machine add the remote repository created in Step 2. (using 'git remote add origin <url>')
+4. In the Angular project root in local machine add the remote repository created in Step 2. (using 'git remote add origin `url`')
   
 5. Use commands "git add ." and "git commit" to commit changes made to the angular.json file in step (3).
 
-6. Remove "dist" folder entry from the gitignore file in project root on local machine(if there) before pushing the code to remote github repo.
+6. Remove "dist" folder entry from the gitignore file in project root on local machine(if dist entry is there) before pushing the code to remote github repo.
 
 7. Command to push the code to GitHub pages:
 
@@ -302,7 +302,7 @@ https://wpanas.github.io/tools/2017/12/25/sdkman.html
 
   (subtree allows us to push only the dist folder on the local master branch to the origin remote branch)
 
-8. Navigate to the URL given in the repository settings under the published URL value.(should be https://<github-user-name>.github.io/)
+8. Navigate to the URL given in the repository settings under the published URL value.(should be `https://<github-user-name>.github.io/`)
 
 ## Eclipse short-cuts
 
