@@ -25,6 +25,7 @@
 ```
 
 - Right-click the project in Eclipse and click on Maven -> Update Project to reflect the Java nature change.
+- IF you see any issues with the download of a `particular` Maven dependency it may be because the Maven repository has become corrupt. Try to `remove` all files and folders inside the `m2` folder and see if it fixes the dependency download issue(MAKE SURE the proxy is `correctly` configured before trying this step.)
 
 
 # Steps to be followed to add an Angular app from local git repo to Github
