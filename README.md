@@ -342,3 +342,40 @@ https://wpanas.github.io/tools/2017/12/25/sdkman.html
 - To enable formatting of code on save and not selecting code and manually formatting it use Save actions which can remove unnecessary code, auto format code, etc on save 
 
 - We can create working sets to group projects
+
+## Useful IntelliJ Shortcuts
+
+1. Path to set JDK:
+```
+File | Project Structure | Platform Settings | SDKs. 
+```
+2. 
+```
+(Alt + Insert) to create constructor, getters/setters, toString(), etc.
+```
+3. To extract expression into a variable use:
+```
+Alt + Ctrl + V
+```
+4. Remove unused imports:
+```
+Ctrl + Alt + O
+```
+5. To format code:
+```
+Ctrl + Alt + L
+```
+6. To create test class for a class:
+```
+Ctrl + Shift + T
+```
+7. For auto-import/suggestion for importing static imports for assertThat() type assertThat() and press:
+```
+Alt + Enter
+```
+- We should see "import static method..." come up which would give us different package suggestions.
+
+8. Shift + Ctrl + space - to see intellisense/suggestions.
+
+9. If we want to put some snipped of code into a private method 1st select the code and then click - Ctrl + Alt + M. We can provide method name in the pop-up box.
+
